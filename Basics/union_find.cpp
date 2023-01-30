@@ -27,6 +27,9 @@ void union1(int u,int v){
     if(rankk[u]<rankk[v]){
         parent[u]=v;
     }
+    else if(rankk[v]<rankk[u]){
+        parent[v]=u;
+    }
     else{
         parent[v]=u;
         rankk[u]++;
